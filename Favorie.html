@@ -8,13 +8,54 @@
 </head>
 <body>
   <header>
-    <nav class="navbar bg-danger">
-      <div class="container-fluid">
-        <h1 style="color: rgb(238, 200, 11); margin-left: 450px;">Mes recettes Happy Meal! <img src="./asset/mcdonalds-3-logo-png-transparent.png" alt="" style="width: 200px; height: auto;"></h1>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" style="color: red; margin-left: 600px;">
-          <button class="btn btn-outline-warning" type="submit"><i class="bi bi-search" style="color: white;"></i></button>
-        </form>
+    <div class="container-fluid bg-danger"> <!-- Ajout de la classe bg-danger -->
+      <h1 style="color: rgb(238, 200, 11); margin-left: 450px;">
+          Mes recettes Happy Meal!
+          <a href="index.html">
+              <img src="./asset/mcdonalds-3-logo-png-transparent.png" alt="" style="width: 200px; height: auto;">
+          </a>
+      </h1>
+      <nav class="navbar navbar-dark bg-yellow"> <!-- Ajout de la classe bg-yellow -->
+          <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <img src="./asset/panier.png" alt="" style="width: 70px; height: auto;">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+          </div>
+      </nav>
+      <a href="Favorie.html">
+          <img src="./asset/favo.png" alt="" style="width: 70px; height: auto;">
+      </a>
+  </div>
+  
+      <input type="text" class="form-control" placeholder="Timezone" list="list-timezone" id="input-datalist">
+      <datalist id="list-timezone">
+          <option>Asia/Aden</option>
+          <option>Asia/Aqtau</option>
+          <option>Asia/Baghdad</option>
+          <option>Asia/Barnaul</option>
+          <option>Asia/Chita</option>
+          <option>Asia/Dhaka</option>
+          <option>Asia/Famagusta</option>
+          <option>Asia/Hong_Kong</option>
+          <option>Asia/Jayapura</option>
+          <option>Asia/Kuala_Lumpur</option>
+          <option>Asia/Jakarta</option>
+      </datalist>
+  </div>
+  
+  
+      <div style="display: flex; flex-direction: column; align-items: center;">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-yellow p-4">
+              <h5 class="text-yellow h4">votre panier:</h5>
+              <h6 class="text-warning h4">°</h6><!-- Ajout de la classe text-warning pour la couleur jaune -->
+              <h6 class="text-warning h4">°</h6>
+              <h6 class="text-warning h4">°</h6>
+              <h6 class="text-warning h4">°</h6>
+              <h6 class="text-warning h4">°</h6>
+              <h6 class="text-warning h4">°</h6>
+          </div>
       </div>
     </nav>
   </header>
